@@ -8,7 +8,7 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "rg-terraform-state" # Change this if your storage account is in another RG
+    resource_group_name  = "rg-terraform-state-demo" # Change this if your storage account is in another RG
     storage_account_name = "sttfstate05102026"
     container_name       = "tfstate"
     key                  = "rg-demo.terraform.tfstate"
